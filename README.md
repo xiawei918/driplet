@@ -10,4 +10,4 @@
 `flask run`
 
 # Resource
-(Xi test)
+(Xi test 2)
