@@ -8,3 +8,6 @@
 `export FLASK_APP=microblog.py`
 
 `flask run`
+
+# Resource
+(Xi test)
