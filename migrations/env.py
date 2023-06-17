@@ -73,9 +73,8 @@ def run_migrations_online():
     context.configure(connection=connection,
                       target_metadata=target_metadata,
                       process_revision_directives=process_revision_directives,
-                      render_as_batch=True,
                       **current_app.extensions['migrate'].configure_args)
-
+    
     try:
         with context.begin_transaction():
             context.run_migrations()
@@ -84,7 +83,6 @@ def run_migrations_online():
         raise exception
     finally:
         connection.close()
-
 
 if context.is_offline_mode():
     run_migrations_offline()
